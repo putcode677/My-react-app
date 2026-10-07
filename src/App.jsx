@@ -1,11 +1,26 @@
-function App() {
-  const name = "Pascal"
-  const age = 25
 
+
+function Header() {
+  return <h1>Student Profile</h1>
+}
+
+function App() {
   return (
     <div>
-      <h1>Hello {name}!</h1>
-      <p>I am {age} years old.</p>
+      <Header />
+      <StudentProfile />
+    </div>
+  )
+}
+
+
+
+function StudentProfile() {
+  return (
+    <div>
+      <p>Name: John hamis</p>
+      <p>Age: 25</p>
+      <p>Course: Software Engineering</p>
     </div>
   )
 }
