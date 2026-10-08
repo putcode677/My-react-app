@@ -16,21 +16,25 @@ function StudentProfile(props) {
 function App() {
   const students = [
     {
+      id: 1,
       name: "Joel Hamis",
       age: 25,
       course: "Software Engineering"
     },
     {
+      id: 2,
       name: "Kamwi Ally",
       age: 28,
       course: "Telecommunication Engineering"
     },
     {
+      id: 3,
       name: "Ally Juma",
       age: 26,
       course: "Software Engineering"
     },
     {
+      id: 4,
       name: "Hamis John",
       age: 23,
       course: "Computer Engineering"
@@ -43,6 +47,7 @@ function App() {
 
       {students.map((student) => (
         <StudentProfile
+          key={student.id}
           name={student.name}
           age={student.age}
           course={student.course}
@@ -51,4 +56,5 @@ function App() {
     </div>
   )
 }
+
 export default App
