@@ -14,35 +14,41 @@ function StudentProfile(props) {
 }
 
 function App() {
+  const students = [
+    {
+      name: "Joel Hamis",
+      age: 25,
+      course: "Software Engineering"
+    },
+    {
+      name: "Kamwi Ally",
+      age: 28,
+      course: "Telecommunication Engineering"
+    },
+    {
+      name: "Ally Juma",
+      age: 26,
+      course: "Software Engineering"
+    },
+    {
+      name: "Hamis John",
+      age: 23,
+      course: "Computer Engineering"
+    }
+  ]
+
   return (
     <div>
       <Header />
 
-      <StudentProfile
-        name="joel hamis"
-        age={25}
-        course="Software Engineering"
-      />
-
-      <StudentProfile
-        name="kamwi ally"
-        age={28}
-        course="Telecommunication Engineering"
-      />
-
-      <StudentProfile
-        name="ally juma"
-        age={26}
-        course="Software Engineering"
-      />
-
-      <StudentProfile
-        name="hamis john"
-        age={23}
-        course="Computer Engineering"
-      />
+      {students.map((student) => (
+        <StudentProfile
+          name={student.name}
+          age={student.age}
+          course={student.course}
+        />
+      ))}
     </div>
   )
 }
-
 export default App
