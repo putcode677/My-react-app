@@ -19,9 +19,27 @@ function App() {
       <Header />
 
       <StudentProfile
-        name="john Hamis"
-        age={22}
-        course="computer science"
+        name="joel hamis"
+        age={25}
+        course="Software Engineering"
+      />
+
+      <StudentProfile
+        name="kamwi ally"
+        age={28}
+        course="Telecommunication Engineering"
+      />
+
+      <StudentProfile
+        name="ally juma"
+        age={26}
+        course="Software Engineering"
+      />
+
+      <StudentProfile
+        name="hamis john"
+        age={23}
+        course="Computer Engineering"
       />
     </div>
   )
